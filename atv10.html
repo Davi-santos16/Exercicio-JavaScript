@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Questão 10</title>
+</head>
+<body>
+    <script>
+        const salario = parseFloat(prompt("Digite o salario:"))
+        if (salario <=1630) {
+            const aumento = (salario*(15/100))+salario
+            alert(aumento)
+            
+        }
+        else if(salario>1630 && salario<=3000){
+            const aumento2 = (salario*(10/100))+salario
+            alert(aumento2)
+        }
+        else if(salario>3000 && salario<=5000){
+            const aumento3 = (salario*(5/100))+salario
+            alert(aumento3)
+
+        }
+        else{
+            const aumento4 = 100+salario
+            alert(aumento4)
+        }
+    </script>
+</body>
+</html>

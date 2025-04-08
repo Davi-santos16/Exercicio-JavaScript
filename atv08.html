@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 8</title>
+</head>
+<body>
+    <script>
+        const solicitar = (nome) =>{
+            if (lista[0].includes(nome)) {
+                const indexAluno = lista[0].indexOf(nome)
+                const nomeAluno = lista[0][indexAluno]
+                const mediaAluno =lista[1][indexAluno]
+                return `nomedoaluno:${nomeAluno}\n media:${mediaAluno}` 
+            }
+            else{
+                return `aluno nao existe`
+            }
+        }
+
+
+        const aluno =[]
+        const nota = []
+        const nome1 = prompt("Nome1:")
+        const nome2 = prompt("Nome2:")
+        const nome3 = prompt("Nome3:")
+        const nome4 = prompt("Nome4:")
+        const nota1 = prompt("nota1:")
+        const nota2 = prompt("nota2:")
+        const nota3 = prompt("nota3:")
+        const nota4 = prompt("nota4:")
+        aluno.push(nome1,nome2,nome3,nome4)
+        nota.push(nota1,nota2,nota3,nota4)
+        const lista = [aluno,nota]
+        const nome =prompt("nomde do aluno:")
+        alert(solicitar(nome))
+
+    </script>
+</body>
+</html>

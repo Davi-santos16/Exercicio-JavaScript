@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questao 6</title>
+</head>
+<body>
+    <script>
+        const frutas=['tomate', 'abacate', 'morango', 'melancia']
+
+
+        const receberOperador=parseInt(prompt('Escolha uma operação:\n1-Adiciona fruta no final da lista\n2-Remover a última fruta da lista\n3-Exibir a(s) n primeiras frutas\n4-Exibir a(s) n últimas frutas\n5-Adicionar uma fruta na posição n'))
+
+        switch (receberOperador) {
+            case 1:
+                const fruta = prompt('digite a fruta:')
+                frutas.push(fruta)
+                alert(frutas)
+            break;
+            case 2:
+                frutas.pop()
+                alert(frutas)
+                break;
+            case 3:
+                const num1 = parseInt(prompt("Digite quantas primeiras frutas a exibir:"))
+                alert(frutas.slice(0,num1))
+                break;
+            case 4:
+                 const num2 = parseInt(prompt("Digite quantas ultimas frutas a exibir:"))
+                 alert(frutas.slice(-num2))
+            case 5:
+                const nomeFruta = prompt('digite a fruta:')
+                const add = parseInt(prompt("adicinar a fruta em que posiçao"))
+                frutas.splice(add,0,nomeFruta)
+                alert(frutas)
+
+            default:
+                 alert("opeçao invalida")
+                break;
+                
+        }
+
+
+    </script>
+</body>
+</html>
